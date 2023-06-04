@@ -1,3 +1,6 @@
+# csv files
+**.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -101,7 +104,6 @@ ENV/
 .mypy_cache/
 
 # input data, saved log, checkpoints
-data/
 input/
 saved/
 datasets/
