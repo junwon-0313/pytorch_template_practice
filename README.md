@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=rounded&color=0:81ed89,100:06c007&text=GitHub%20협업%20규칙e&height=150&fontSize=80&fontColor=d3ffd8)
+![header](https://capsule-render.vercel.app/api?type=rounded&color=0:81ed89,100:06c007&text=GitHub%20협업%20규칙&height=150&fontSize=80&fontColor=d3ffd8)
 
 <br>
 이 문서는 GitHub 협업 규칙을 담고 있습니다.
@@ -126,6 +126,8 @@ ISSUE / PR은 다음의 규칙을 지킨다.
 <br><br>
 
 - 참조 링크
+<br>
+
 [기본 템플릿](https://github.com/victoresque/pytorch-template)
 <br>
 
