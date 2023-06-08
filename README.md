@@ -1,5 +1,13 @@
 ![header](https://capsule-render.vercel.app/api?type=rounded&color=0:81ed89,100:06c007&text=GitHub%20협업%20규칙&height=150&fontSize=80&fontColor=d3ffd8)
 
+# Setting
+## How to set pre-commit config
+
+```bash
+pip install pre-commit
+pre-commit install
+```
+
 <br>
 이 문서는 GitHub 협업 규칙을 담고 있습니다.
 <br><br>
