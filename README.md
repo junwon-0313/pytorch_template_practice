@@ -19,10 +19,13 @@ pre-commit install
 머릿말은 아래와 같은 구조로 이루어져 있습니다.
 - tag: subject
 - tag는 소문자로 시작
-- subject는 대문자로 시작
+- subject는 소문자로 시작
 
 #### Tag
-- 태그: 커밋의 종류를 나타냅니다. 주요 태그 아래와 같습니다:
+- 태그: 커밋의 종류를 나타냅니다.
+
+<br>
+주요 태그 아래와 같습니다:
 
   - `feat`: 새로운 기능 추가
   - `fix`: 버그 수정
@@ -54,7 +57,7 @@ pre-commit install
 - 여러 개의 이슈 번호를 적을 때는 쉼표(,)로 구분한다.
 
 ### 커밋 메시지 예시
->setting: Add issue template
+>setting: add issue template
 > (enter)
 >To use when implementing new features.
 > (enter)
@@ -64,11 +67,12 @@ pre-commit install
 
 ## 2. ISSUE / PR
 ISSUE / PR은 다음의 규칙을 지킨다.
+
 - ISSUE 기반으로 커밋을 트래킹한다.
 - PR은 최소 1명 이상의 확인을 받고 승인해야한다.
 - ISSUE / PR은 템플릿을 만들어서 사용하고 아래의 규칙에 따라 제목을 설정해야한다.
 
-### 제목
+### ISSUE 제목
 
   - [Feat] 새로운 기능 추가
   - [Fix] 버그 수정
@@ -79,8 +83,23 @@ ISSUE / PR은 다음의 규칙을 지킨다.
   - [Test] 테스트 관련 변경
   - [Chore] 그 외 자잘한 변경
 
-### ISSUE/PR 제목 예시
+### ISSUE 제목 예시
 > [Feat] Saint+ 모델 구현 
+<br>
+
+### PR 제목
+
+  - feat: 새로운 기능 추가
+  - fix: 버그 수정
+  - docs: 문서 관련 변경
+  - setting: 프로젝트 초기 설정
+  - style: 코드 스타일 변경 (공백, 포맷 등)
+  - refactor: 코드 리팩토링
+  - test: 테스트 관련 변경
+  - chore: 그 외 자잘한 변경
+
+### PR 제목 예시
+> feat: Saint+ 모델 구현 
 ---
 
 ## 3. 대회를 위한 Git Flow
@@ -89,19 +108,26 @@ ISSUE / PR은 다음의 규칙을 지킨다.
 
 - 새로운 모델을 만들 때, ISSUE를 생성한다. 
      >[FEAT] Saint+ 모델 구현
-- master에서 브랜치를 base: 모델명으로 생성한다.
-    >base: saint+
-- base: 모델명 브랜치에서 사용자명: 모델명으로 브랜치를 생성해서 작업한다.
-    >junwon: saint+
-- 정상적으로 동작하는 기능이나 공유하고 싶은 자료가 있을 때, base: 모델명 브랜치에 사용자의 branch를 merge한다.
+- master에서 브랜치를 base/모델명으로 생성한다.
+    >base/saint+
+- base/모델명 브랜치에서 사용자명/모델명으로 브랜치를 생성해서 작업한다.
+    >junwon/saint+
+- 정상적으로 동작하는 기능이나 공유하고 싶은 자료가 있을 때, base/모델명 브랜치에 사용자의 branch를 merge한다.
 
-- 모델이 완성되었을 때, master에 base: 모델명을 merge한다.
+- 모델이 완성되었을 때, master에 base/모델명을 merge한다.
 <br>
 
-## 4. 프로젝트 폴더 구조 
+## 4. 프로젝트 폴더 구조
+
 <br>
-<img width="400" alt="image" src="https://github.com/boostcampaitech5/level2_movierecommendation-recsys-01/assets/69078499/ec79e214-73d7-4623-8ea5-edeb0949aa3b">
-<br>
+📦 Project<br>
+ ┣ 📂data<br>
+ ┣ 📂notebooks<br>
+ ┣ 📂src<br>
+ ┃ ┗ 📂model 1<br>
+ ┃ ┗ 📂model 2<br>
+ ┗ 📜README.md<br>
+<br><br>
 
 - README.md
 
