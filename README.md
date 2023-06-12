@@ -1,13 +1,5 @@
 ![header](https://capsule-render.vercel.app/api?type=rounded&color=0:81ed89,100:06c007&text=GitHub%20협업%20규칙&height=150&fontSize=80&fontColor=d3ffd8)
 
-# Setting
-## How to set pre-commit config
-
-```bash
-pip install pre-commit
-pre-commit install
-```
-
 <br>
 이 문서는 GitHub 협업 규칙을 담고 있습니다.
 <br><br>
@@ -22,10 +14,9 @@ pre-commit install
 - subject는 소문자로 시작
 
 #### Tag
-- 태그: 커밋의 종류를 나타냅니다.
-
-<br>
+태그는 커밋의 종류를 나타냅니다.<br>
 주요 태그 아래와 같습니다:
+<br>
 
   - `feat`: 새로운 기능 추가
   - `fix`: 버그 수정
@@ -41,6 +32,7 @@ pre-commit install
 
 - 최대 50글자가 넘지 않도록 하고 마침표 및 특수기호는 사용하지 않는다.
 - 명령문으로 작성한다.
+<br>
 
 ### Body
 본문은 다음의 규칙을 지킨다.
@@ -48,6 +40,7 @@ pre-commit install
 - 본문은 한 줄 당 72자 내로 작성한다.
 - 본문 내용은 양에 구애받지 않고 최대한 상세히 작성한다.
 - 본문 내용은 어떻게 변경했는지 보다 무엇을 변경했는지 또는 왜 변경했는지를 설명한다.
+<br>
 
 ### Footer
 꼬릿말은 다음의 규칙을 지킨다.
@@ -55,12 +48,13 @@ pre-commit install
 - 꼬리말은 optional이고 이슈 트래커 ID를 작성한다.
 - 꼬리말은 " #이슈 번호" 형식으로 사용한다.
 - 여러 개의 이슈 번호를 적을 때는 쉼표(,)로 구분한다.
+<br>
 
 ### 커밋 메시지 예시
 >setting: add issue template
-> (enter)
+>
 >To use when implementing new features.
-> (enter)
+>
 > #1
  
 ---
@@ -101,6 +95,7 @@ ISSUE / PR은 다음의 규칙을 지킨다.
 ### PR 제목 예시
 > feat: Saint+ 모델 구현 
 ---
+<br>
 
 ## 3. 대회를 위한 Git Flow
 
@@ -113,13 +108,13 @@ ISSUE / PR은 다음의 규칙을 지킨다.
 - base/모델명 브랜치에서 사용자명/모델명으로 브랜치를 생성해서 작업한다.
     >junwon/saint+
 - 정상적으로 동작하는 기능이나 공유하고 싶은 자료가 있을 때, base/모델명 브랜치에 사용자의 branch를 merge한다.
+<br>
 
 - 모델이 완성되었을 때, master에 base/모델명을 merge한다.
 <br>
 
 ## 4. 프로젝트 폴더 구조
 
-<br>
 📦 Project<br>
  ┣ 📂data<br>
  ┣ 📂notebooks<br>
@@ -127,7 +122,7 @@ ISSUE / PR은 다음의 규칙을 지킨다.
  ┃ ┗ 📂model 1<br>
  ┃ ┗ 📂model 2<br>
  ┗ 📜README.md<br>
-<br><br>
+<br>
 
 - README.md
 
@@ -148,7 +143,6 @@ ISSUE / PR은 다음의 규칙을 지킨다.
     양식은 제목-사용자명.ipynb으로 한다.
     <br>
     >예시: EDA-junwon.ipynb
-<br>
 
 - src
 
@@ -159,12 +153,20 @@ ISSUE / PR은 다음의 규칙을 지킨다.
 파이토치 템플릿은 아래 링크를 참고하여 작성한다.
 <br><br>
 
-- 참조 링크
+참조 링크
 <br>
 
-[기본 템플릿](https://github.com/victoresque/pytorch-template)
+- [기본 템플릿](https://github.com/victoresque/pytorch-template)
 <br>
 
-[간단한 버전](https://smha-61749.medium.com/pytorch-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%84%A4%EA%B3%84%ED%95%98%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0-ccf222552e63)
+- [간단한 버전](https://smha-61749.medium.com/pytorch-%EB%A8%B8%EC%8B%A0%EB%9F%AC%EB%8B%9D-%EB%94%A5%EB%9F%AC%EB%8B%9D-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%84%A4%EA%B3%84%ED%95%98%EA%B3%A0-%ED%85%9C%ED%94%8C%EB%A6%BF-%EA%B5%AC%EC%84%B1%ED%95%98%EA%B8%B0-ccf222552e63)
 
 <br>
+
+# Setting
+## How to set pre-commit config
+
+```bash
+pip install pre-commit
+pre-commit install
+```
